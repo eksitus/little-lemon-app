@@ -1,20 +1,29 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useEffect, useState } from "react";
+import { Button, Image, StyleSheet, Text, View } from "react-native";
+import LittleLemonHeader from "./components/LittleLemonHeader.js";
+import LittleLemonFooter from "./components/LittleLemonFooter.js";
+import WelcomeScreen from "./components/WelcomeScreen.js";
+import MenuItems from "./components/MenuItems.js";
+import FeedbackForm from "./components/FeedbackForm.js";
+import LoginScreen from "./components/LoginScreen.js";
+import { colors } from "./data.js";
 
-export default function App() {
+const LotsOfStyles = () => {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <LittleLemonHeader />
+      <WelcomeScreen />
+      <LittleLemonFooter />
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: "space-between",
+    flexDirection: "column",
+    backgroundColor: colors.green,
   },
 });
+export default LotsOfStyles;

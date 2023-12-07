@@ -25,6 +25,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "725c8954-92e3-4e2e-aa93-0edad4f5afbb"
+      }
+    },
+    "owner": "uveys.aydemir"
   }
 }
